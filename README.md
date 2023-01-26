@@ -1,6 +1,13 @@
 # URL SHORTENER
 
-- Simple URL Shortener service using Node.js, Express.js, and MongoDB for the backend, and React for the frontend.
+- Simple URL Shortener service using MERN stack to practice MERN concepts including:
+  - Building Express API.
+  - Basic CRUD Operations in Mongodb.
+  - JWT API Authentication.
+  - React Basic Hooks.
+  - MUI Basics.
+  - CORs.
+  - Express Middlewares.
   
 ## Run Steps
 

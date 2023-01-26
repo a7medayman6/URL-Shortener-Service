@@ -13,6 +13,8 @@ npm install
 npm run server
 ```
 
+- Open another seperate terminal in the project directory
+  
 - Run the frontend
 ```sh
 cd frontend

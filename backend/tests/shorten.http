@@ -7,11 +7,23 @@ GET {{apibaseUrl}}/test
 
 ###
 
+# Get Auth Token
+POST {{apibaseUrl}}/auth/ HTTP/1.1
+Content-Type: application/json 
+
+{
+    "username":"root",
+    "password":"root"
+}
+
+###
 # Test Shorten URL
-GET {{apibaseUrl}}/shorten?url=home.com
+GET {{apibaseUrl}}/shorten?url=home.com HTTP/1.1
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzQ3NTg2NTUsImV4cCI6NTI3NDc1ODY1NX0.1lgoSybayOA-rE56XusdVT3OUl9X7yEB9PS5N2DEMsw 
+
 
 ###
 
 # Test Get Original URL
 GET {{apibaseUrl}}/getOriginal?shortUrl=shortenedurl.short/6089ea00-9a47-11ed-8af1-470e8ffff95b
- 
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzQ3NTg2NTUsImV4cCI6NTI3NDc1ODY1NX0.1lgoSybayOA-rE56XusdVT3OUl9X7yEB9PS5N2DEMsw 

@@ -14,3 +14,4 @@ GET {{apibaseUrl}}/shorten?url=home.com
 
 # Test Get Original URL
 GET {{apibaseUrl}}/getOriginal?shortUrl=shortenedurl.short/6089ea00-9a47-11ed-8af1-470e8ffff95b
+ 
